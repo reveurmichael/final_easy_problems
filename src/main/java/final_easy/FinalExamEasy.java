@@ -39,7 +39,7 @@ public class FinalExamEasy {
          Otherwise, it shall print "计算失败".
          Please use a "switch-case-default" statement.
          Please don't modify the return type (void).
-         You can use print or println, it won't make any difference to our test.
+         Please use println instead of print.
          */
     }
 
@@ -59,24 +59,40 @@ public class FinalExamEasy {
 
     public void Question4(){
         /* TODO Question 4
-        Write a program called SquarePattern that prompts
-        user for the size (a non-negative integer in int);
-        and prints the following square pattern using two nested for-loops.
-        Enter the size: 5
-        # # # # #
-        # # # # #
-        # # # # #
-        # # # # #
-        # # # # #
+        Write
+        1 2 3 4 5 6 7 8 7 6 5 4 3 2 1
+        1 2 3 4 5 6 7   7 6 5 4 3 2 1
+        1 2 3 4 5 6       6 5 4 3 2 1
+        1 2 3 4 5           5 4 3 2 1
+        1 2 3 4               4 3 2 1
+        1 2 3                   3 2 1
+        1 2                       2 1
+        1                           1
         Please don't modify the return type (void).
+        For each line, please use println instead of print.
         */
     }
 
-    public void Question5(){
+    public void Question51(){
         /*
         Write a programs called NumberPatternX
          that prompts user for the size
          (a non-negative integer in int); and prints the pattern as shown:
+         H g F e D c B a
+         g F e D c B a
+         F e D c B a
+         e D c B a
+         D c B a
+         c B a
+         B a
+         a
+         G f E d C b A
+         F e D c B a
+         E d C b A
+         D c B a
+         C b A
+         B a
+         A
          8 7 6 5 4 3 2 1
          7 6 5 4 3 2 1
          6 5 4 3 2 1
@@ -87,6 +103,70 @@ public class FinalExamEasy {
          1
          */
     }
+
+    public void Question52(){
+        /*
+        Write a programs called NumberPatternX
+         that prompts user for the size
+         (a non-negative integer in int); and prints the pattern as shown:
+         H g F e D c B a
+         g F e D c B a
+         F e D c B a
+         e D c B a
+         D c B a
+         c B a
+         B a
+         a
+         G f E d C b A
+         F e D c B a
+         E d C b A
+         D c B a
+         C b A
+         B a
+         A
+         8 7 6 5 4 3 2 1
+         7 6 5 4 3 2 1
+         6 5 4 3 2 1
+         5 4 3 2 1
+         4 3 2 1
+         3 2 1
+         2 1
+         1
+         */
+    }
+
+    public void Question53(){
+        /*
+        Write a programs called NumberPatternX
+         that prompts user for the size
+         (a non-negative integer in int); and prints the pattern as shown:
+         H g F e D c B a
+         g F e D c B a
+         F e D c B a
+         e D c B a
+         D c B a
+         c B a
+         B a
+         a
+         G f E d C b A
+         F e D c B a
+         E d C b A
+         D c B a
+         C b A
+         B a
+         A
+         8 7 6 5 4 3 2 1
+         7 6 5 4 3 2 1
+         6 5 4 3 2 1
+         5 4 3 2 1
+         4 3 2 1
+         3 2 1
+         2 1
+         1
+         */
+    }
+
+
 
     public void Question6(){
         /*
@@ -104,12 +184,11 @@ public class FinalExamEasy {
 
     public void Question8(){
         /*
-        Find the number of an array of MyData whose absolute is the most in proximity to 100.
+        Find the MyData object of an array of MyData whose absolute is the most in proximity to 100.
         */
     }
 
     public static void main(String[] args) {
-
 
 
     }
