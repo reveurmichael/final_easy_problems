@@ -35,8 +35,8 @@ public class FinalExamEasy {
         /* TODO Question 2
          Write a program called printDayOfTheWeekInChinese which prints
          “星期一”, “星期二”, ... “星期日” if the int variable
-         "dayNumber" is 0, 1, ..., 6, respectively.
-         Otherwise, it shall print "请输入数字0-6".
+         "dayNumber" is 1, ..., 7, respectively.
+         Otherwise, it shall print "计算失败".
          Please use a "switch-case-default" statement.
          Please don't modify the return type (void).
          You can use print or println, it won't make any difference to our test.
@@ -47,9 +47,9 @@ public class FinalExamEasy {
         /* TODO Question 3
         We know that PI = 4 * (1/1 - 1/3 + 1/5 - 1/7 + 1/9 - 1/11 + ...)
         Use a for or while loop to calculate this value.
-        The loop stops when either of the two conditions is fullfilled:
-        1. we are at ... -1/119 + 1/201.
-        2. or, if pi - 3.141592663 <= 0.000000001
+        The loop stops when either of the two conditions is fulfilled:
+        1. we are at ... -1/19 + 1/21.
+        2. or, if abs(pi - 3.141592663) <= 0.000000001
         Please use a for or while loop statement.
         Please don't modify the return type (double).
         */
