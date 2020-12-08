@@ -1,6 +1,6 @@
 # Template for Java exercices
 
-basic supermario template
+basic final_easy template
 
 ## How to run this code
 

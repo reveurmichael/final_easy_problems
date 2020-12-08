@@ -3,7 +3,7 @@
  @email: lundechen@shu.edu.cn
  */
 
-package supermario;
+package final_easy;
 
 import java.util.ArrayList;
 import java.util.Scanner;
@@ -15,7 +15,7 @@ public class App {
         Question: are you Fight.java file less than 115 lines?
         If yes, return yes.
          */
-        return "no"; // TODO: are you Fight.java file less than 115 lines? If yes, return yes.
+        return "YES"; // TODO: are you Fight.java file less than 115 lines? If yes, return yes.
     }
 
     public String answerQuestion2(){
@@ -23,7 +23,7 @@ public class App {
         Question: can your code run the game correctly?
         If yes, return yes.
          */
-        return "no"; // TODO: can your code run the game correctly?? If yes, return yes.
+        return "YES"; // TODO: can your code run the game correctly?? If yes, return yes.
     }
 
     public String answerQuestion3(){
@@ -31,7 +31,7 @@ public class App {
         Question: can your understand the difference between Inheritance and Interface?
         If yes, return yes.
          */
-        return "no"; // TODO: If yes, return yes.
+        return "YES"; // TODO: If yes, return yes.
     }
 
     public String answerQuestion4(){
@@ -39,7 +39,7 @@ public class App {
         Question: do your know something about the super keyword?
         If yes, return yes.
          */
-        return "no"; // TODO: If yes, return yes.
+        return "YES"; // TODO: If yes, return yes.
     }
 
     public String answerQuestion5(){
@@ -47,7 +47,7 @@ public class App {
         Question: do your know something about the isinstanceof keyword?
         If yes, return yes.
          */
-        return "no"; // TODO: If yes, return yes.
+        return "YES"; // TODO: If yes, return yes.
     }
 
     public static void main(String[] args) {

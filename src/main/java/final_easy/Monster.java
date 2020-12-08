@@ -3,7 +3,7 @@
  @email: lundechen@shu.edu.cn
  */
 
-package supermario;
+package final_easy;
 
 import java.util.Random;
 
