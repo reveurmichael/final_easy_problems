@@ -90,6 +90,7 @@ public class FinalExamEasy {
     public int[][] Question4(int size){
         int[][] arr2d = new int[size][size]; // Don't change this line of code.
         /*
+        TODO:
          Represent one triangle in the arr2d, which, when printed, will show this pattern (e.g. size = 8):
          8 7 6 5 4 3 2 1
          7 6 5 4 3 2 1
@@ -161,6 +162,9 @@ public class FinalExamEasy {
         "Three": (MyData, value = 1000)
         "Four": (MyData, value = 10000)
 
+        What should be the values of MyData objects when N = 9, or N = 99, or any other integer value?
+        It's up to you to find out the pattern, although it's very clear from those several examples.
+
         Note that there are only four entries ("One", "Two", "Three", "Four") in the hashMap.
          */
 
@@ -213,5 +217,4 @@ public class FinalExamEasy {
 
         return null; // TODO return something else
     }
-
 }

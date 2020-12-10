@@ -1,5 +1,7 @@
 package final_easy;
 
+import java.util.HashMap;
+
 public class Main {
 
     public static void main(String[] args) {
@@ -24,20 +26,26 @@ public class Main {
         System.out.println(easy.computePIWithSeriesExpansion(21));
 
         System.out.println("\nQuestion 4");
-        System.out.println(easy.Question4(4));
-        System.out.println(easy.Question4(7));
-        System.out.println(easy.Question4(8));
+        easy.Question4(4);
+        easy.Question4(7);
+        easy.Question4(8);
 
         System.out.println("\nQuestion 5");
-        System.out.println(easy.Question5(4));
-        System.out.println(easy.Question5(7));
-        System.out.println(easy.Question5(8));
+        easy.Question5(4);
+        easy.Question5(7);
+        easy.Question5(8);
 
         System.out.println("\nQuestion 6");
-        System.out.println(easy.Question6(3).get("One"));
-        System.out.println(easy.Question6(3).get("Two"));
-        System.out.println(easy.Question6(3).get("Three"));
-        System.out.println(easy.Question6(3).get("Four"));
+        HashMap<String, MyData> hashMap1 = easy.Question6(3);
+        System.out.println(hashMap1.get("One"));
+        System.out.println(hashMap1.get("Two"));
+        System.out.println(hashMap1.get("Three"));
+        System.out.println(hashMap1.get("Four"));
+        HashMap<String, MyData> hashMap2 = easy.Question6(10);
+        System.out.println(hashMap2.get("One"));
+        System.out.println(hashMap2.get("Two"));
+        System.out.println(hashMap2.get("Three"));
+        System.out.println(hashMap2.get("Four"));
 
         System.out.println("\nQuestion 7");
         MyData[] arrMyDataQ7 = new MyData[4];
