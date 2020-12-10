@@ -32,6 +32,7 @@ public class FinalExamEasy {
         1, 3, 5, 7, 9 are odd.
         Please don't modify the return type (boolean).
         */
+        // TODO: write your code here.
         return false; // TODO return something else
     }
 
@@ -45,22 +46,30 @@ public class FinalExamEasy {
          Please don't modify the return type (String).
          Please use println instead of print.
          */
+        // TODO: write your code here.
         return "FinalExamDay"; // TODO return something else
     }
 
-    public double computePIWithSeriesExpansion(){
+    public double computePIWithSeriesExpansion(int N){
         /* TODO Question 3
         We know that PI = 4 * (1/1 - 1/3 + 1/5 - 1/7 + 1/9 - 1/11 + ...)
         Use a for or while loop to calculate this value.
-        The loop stops when we are at ... -1/19 + 1/21.
-        Please use a for or while loop statement.
+        The loop stops when the last term is 1/N.
+        for example,
+        if N = 21, then the program calculates:
+        4 * (1/1 - 1/3 + 1/5 - 1/7 + 1/9 - 1/11 + ... -1/19 + 1/21)
+        if N = 23, then the program calculates:
+        4 * (1/1 - 1/3 + 1/5 - 1/7 + 1/9 - 1/11 + ... +1/21 - 1/23)
+        Please use a while loop statement.
         Please don't modify the return type (double).
         */
         double pi = 0.0;
+        // TODO: write your code here.
         return pi;
     }
 
     public void print2DIntArray(int[][] arr2d){
+        // YOU DON'T NEED TO MODIFY THIS FUNCTION.
         // This function helps you to debug if you want to
         // print a two-dimensional array of int type.
         int m = arr2d.length;
@@ -79,25 +88,6 @@ public class FinalExamEasy {
     }
 
     public int[][] Question4(int size){
-        int[][] arr2d = new int[size][size * 2 - 1];
-        /* TODO Question 4
-        Write
-        1 2 3 4 5 6 7 8 7 6 5 4 3 2 1
-        1 2 3 4 5 6 7   7 6 5 4 3 2 1
-        1 2 3 4 5 6       6 5 4 3 2 1
-        1 2 3 4 5           5 4 3 2 1
-        1 2 3 4               4 3 2 1
-        1 2 3                   3 2 1
-        1 2                       2 1
-        1                           1
-        Please don't modify the return type (void).
-        For each line, please use println instead of print.
-        */
-        print2DIntArray(arr2d);
-        return arr2d;
-    }
-
-    public int[][] Question5(int size){
         int[][] arr2d = new int[size][size];
         /*
         Write a programs called NumberPatternX
@@ -113,11 +103,13 @@ public class FinalExamEasy {
          2 1
          1
          */
+        // TODO: write your code here.
+
         print2DIntArray(arr2d);
         return arr2d;
     }
 
-    public int[][] Question6(int size){
+    public int[][] Question5(int size){
         int[][] arr2d = new int[size][size * 2];
         /*
          8 7 6 5 4 3 2 1 8 7 6 5 4 3 2 1
@@ -129,11 +121,13 @@ public class FinalExamEasy {
          2 1             2 1
          1               1
          */
+        // TODO: write your code here.
+
         print2DIntArray(arr2d);
         return arr2d;
     }
 
-    public HashMap<String, MyData> Question7(){
+    public HashMap<String, MyData> Question6(){
         HashMap<String, MyData> hashMap = new HashMap<String, MyData>();
         /*
         Hashmap<String, MyData>
@@ -143,29 +137,46 @@ public class FinalExamEasy {
         Four: 81
         Five: 243
          */
+        // TODO: write your code here.
+
         return hashMap;
     }
 
-    public MyData[] Question8(MyData[] arrMyData){
+    public MyData[] sortArrayUsingBubbleOrSelectionSort(MyData[] arrMyData){
         /*
          Sort an array of MyData, using bubblesort or selectionsort.
          ATTENTION: Please don't modify anything on the MyData class.
          On the contrary, you can add functions to the FinalExamEasy class.
         */
+        // TODO: write your code here.
+
         return arrMyData;
+    }
+
+    public MyData Question8(MyData[] arrMyData){
+        /*
+         Find the maximum number of an array of MyData
+        */
+        // TODO: write your code here.
+
+        return null; // TODO return something else
     }
 
     public MyData Question9(MyData[] arrMyData){
         /*
-         Find the 2nd maximum number of an array of MyData
+         Find the 2nd maximum number of an array of MyData (arrMyData)
         */
+        // TODO: write your code here.
+
         return null; // TODO return something else
     }
 
     public MyData Question10(MyData[] arrMyData){
         /*
-        Find the MyData object of an array of MyData whose value is the most in proximity to 10.
+        Find the MyData object in an array of MyData (arrMyData) whose value is the most in proximity to 5.
         */
+        // TODO: write your code here.
+
         return null; // TODO return something else
     }
 
