@@ -25,7 +25,7 @@ public class FinalExamEasy {
     public boolean checkIfANumberIsEven(int number){
         /* TODO Question 1
         Write a program called checkIfANumberIsEven which
-        checks if the int variable “number” is odd (return true),
+        checks if the int variable "number" is odd (return true),
         or even otherwise (return false).
         For example,
         2, 4, 6, 8, 10 are even,
@@ -39,7 +39,7 @@ public class FinalExamEasy {
     public String getDayOfTheWeek(int dayNumber){
         /* TODO Question 2
          Write a program called getDayOfTheWeek which returns
-         “Monday”, “Tuesday”, ... “Sunday” if the int variable
+         "Monday", "Tuesday", ... "Sunday" if the int variable
          "dayNumber" is 1, ..., 7, respectively.
          Otherwise, it shall return "FinalExamDay".
          Please use a "switch-case-default" statement.
@@ -63,7 +63,7 @@ public class FinalExamEasy {
         Please use a while loop statement.
         Please don't modify the return type (double).
         */
-        double pi = 0.0;
+        double pi = 1.0;
         // TODO: write your code here.
         return pi;
     }
@@ -182,6 +182,8 @@ public class FinalExamEasy {
 
          Note that arrMyData is an parameter, as well as the returned value.
         */
+
+        int size = arrMyData.length;
         // TODO: write your code here.
 
         return arrMyData; // Don't change this line of code.

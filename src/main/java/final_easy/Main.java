@@ -5,7 +5,8 @@ import java.util.HashMap;
 public class Main {
 
     public static void main(String[] args) {
-        FinalExamEasy easy = new FinalExamEasy();
+        FinalExamEasyCorrectAnswer easy = new FinalExamEasyCorrectAnswer();
+//        FinalExamEasy easy = new FinalExamEasy();
 
         System.out.println("\nQuestion 1");
         System.out.println(easy.checkIfANumberIsEven(10));

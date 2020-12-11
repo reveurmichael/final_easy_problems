@@ -10,7 +10,7 @@ public class FinalExamEasyCorrectAnswer {
     public boolean checkIfANumberIsEven(int number){
         /* TODO Question 1
         Write a program called checkIfANumberIsEven which
-        checks if the int variable “number” is odd (return true),
+        checks if the int variable "number" is odd (return true),
         or even otherwise (return false).
         For example,
         2, 4, 6, 8, 10 are even,
@@ -18,13 +18,13 @@ public class FinalExamEasyCorrectAnswer {
         Please don't modify the return type (boolean).
         */
         // TODO: write your code here.
-        return false; // TODO return something else
+        return number % 2 != 0; // TODO return something else
     }
 
     public String getDayOfTheWeek(int dayNumber){
         /* TODO Question 2
          Write a program called getDayOfTheWeek which returns
-         “Monday”, “Tuesday”, ... “Sunday” if the int variable
+         "Monday", "Tuesday", ... "Sunday" if the int variable
          "dayNumber" is 1, ..., 7, respectively.
          Otherwise, it shall return "FinalExamDay".
          Please use a "switch-case-default" statement.
@@ -32,7 +32,24 @@ public class FinalExamEasyCorrectAnswer {
          Please use println instead of print.
          */
         // TODO: write your code here.
-        return "FinalExamDay"; // TODO return something else
+        switch (dayNumber){
+            case 1:
+                return "Monday";
+            case 2:
+                return "Tuesday";
+            case 3:
+                return "Wednesday";
+            case 4:
+                return "Thursday";
+            case 5:
+                return "Friday";
+            case 6:
+                return "Saturday";
+            case 7:
+                return "Sunday";
+            default:
+                return "FinalExamDay";
+        }
     }
 
     public double computePIWithSeriesExpansion(int N){
@@ -48,8 +65,16 @@ public class FinalExamEasyCorrectAnswer {
         Please use a while loop statement.
         Please don't modify the return type (double).
         */
-        double pi = 0.0;
+        double pi = 1.0;
         // TODO: write your code here.
+        int n = 3;
+        double sign = -1;
+        while(n <= N){
+            pi += sign / n;
+            sign *= (-1);
+            n += 2;
+        }
+        pi *= 4;
         return pi;
     }
 
@@ -63,7 +88,7 @@ public class FinalExamEasyCorrectAnswer {
         if(n == 0) return;
         for(int i = 0; i < m; i ++){
             for(int j = 0; j < n; j ++){
-                if(arr2d[i][j] == 0)
+                if(arr2d[i][j] <= 0)
                     System.out.print("   ");
                 else
                     System.out.printf("%3d", arr2d[i][j]);
@@ -86,10 +111,13 @@ public class FinalExamEasyCorrectAnswer {
          2 1
          1
 
-         Note that 0s are printed as " "(space).
+         Note that numbers that are equal or smaller than 0 are printed as " "(space).
          You don't need to write the print function. Do things with the arr2d then it's OK.
          */
         // TODO: write your code here.
+        for(int i = 0; i < size; i ++)
+            for(int j = 0; j < size; j ++)
+                arr2d[i][j] = size - i - j;
 
         print2DIntArray(arr2d); // Don't change this line of code.
         return arr2d; // Don't change this line of code.
@@ -108,10 +136,17 @@ public class FinalExamEasyCorrectAnswer {
          2 1             2 1
          1               1
 
-         Note that 0s are printed as " "(space).
+         Note that numbers that are equal or smaller than 0 are printed as " "(space).
          You don't need to write the print function. Do things with the arr2d then it's OK.
          */
         // TODO: write your code here.
+        for(int i = 0; i < size; i ++)
+            for(int j = 0; j < size; j ++)
+                arr2d[i][j] = size - i - j;
+
+        for(int i = 0; i < size; i ++)
+            for(int j = size; j < 2 * size; j ++)
+                arr2d[i][j] = arr2d[i][j - size];
 
         print2DIntArray(arr2d); // Don't change this line of code.
         return arr2d; // Don't change this line of code.
@@ -121,39 +156,44 @@ public class FinalExamEasyCorrectAnswer {
         HashMap<String, MyData> hashMap = new HashMap<String, MyData>(); // Don't change this line of code.
         /*
         TODO:
-         Add elements to the hashMap (of type Hashmap<String, MyData>), so that the hashmap will have contents that follow this pattern:
+         Add elements to the hashMap (of type Hashmap<String, MyData>),
+         so that the hashmap will have contents that follow this pattern:
 
-        if N = 2:
+        if N = 2, key-value pairs are:
         "One": (MyData, value = 2)
         "Two": (MyData, value = 4)
         "Three": (MyData, value = 8)
         "Four": (MyData, value = 16)
 
-        if N = 3:
+        if N = 3, key-value pairs are:
         "One": (MyData, value = 3)
         "Two": (MyData, value = 9)
         "Three": (MyData, value = 27)
         "Four": (MyData, value = 81)
 
-        if N = 4:
+        if N = 4, key-value pairs are:
         "One": (MyData, value = 4)
         "Two": (MyData, value = 16)
         "Three": (MyData, value = 64)
         "Four": (MyData, value = 256)
 
-        if N = 10:
+        if N = 10, key-value pairs are:
         "One": (MyData, value = 10)
         "Two": (MyData, value = 100)
         "Three": (MyData, value = 1000)
         "Four": (MyData, value = 10000)
 
-        What should be the values of MyData objects when N = 9, or N = 99, or any other integer value?
+        What should be the value of MyData objects when N = 9, or N = 99, or any other integer value?
         It's up to you to find out the pattern, although it's very clear from those several examples.
 
         Note that there are only four entries ("One", "Two", "Three", "Four") in the hashMap.
          */
 
         // TODO: write your code here.
+        hashMap.put("One", new MyData(N));
+        hashMap.put("Two", new MyData(N * 2));
+        hashMap.put("Three", new MyData(N * 3));
+        hashMap.put("Four", new MyData(N * 4));
 
         return hashMap; // Don't change this line of code.
     }
@@ -168,7 +208,16 @@ public class FinalExamEasyCorrectAnswer {
          Note that arrMyData is an parameter, as well as the returned value.
         */
         // TODO: write your code here.
-
+        int size = arrMyData.length;
+        for(int i = 0; i < size; i ++){
+            for(int j = 0; j < size - i - 1; j ++){
+                if(arrMyData[j].value > arrMyData[j + 1].value){
+                    MyData tmp = arrMyData[j + 1];
+                    arrMyData[j + 1] = arrMyData[j];
+                    arrMyData[j] = tmp;
+                }
+            }
+        }
         return arrMyData; // Don't change this line of code.
     }
 
@@ -179,8 +228,9 @@ public class FinalExamEasyCorrectAnswer {
          Note that returned type is MyData.
         */
         // TODO: write your code here.
+        MyData[] sortedArr = sortArrayUsingBubbleOrSelectionSort(arrMyData);
 
-        return null; // TODO return something else
+        return sortedArr[sortedArr.length - 1];
     }
 
     public MyData Question9(MyData[] arrMyData){
@@ -191,7 +241,9 @@ public class FinalExamEasyCorrectAnswer {
         */
         // TODO: write your code here.
 
-        return null; // TODO return something else
+        MyData[] sortedArr = sortArrayUsingBubbleOrSelectionSort(arrMyData);
+
+        return sortedArr[sortedArr.length - 2];
     }
 
     public MyData Question10(MyData[] arrMyData){
@@ -199,7 +251,14 @@ public class FinalExamEasyCorrectAnswer {
         Find the MyData object in an array of MyData (arrMyData) whose value is the most in proximity to 5.
         */
         // TODO: write your code here.
-
-        return null; // TODO return something else
+        int size = arrMyData.length;
+        int min = Math.abs(arrMyData[0].value - 5);
+        int minIndex = 0;
+        for(int i = 1; i < size; i ++)
+            if(Math.abs(arrMyData[i].value - 5) < min){
+                min = Math.abs(arrMyData[i].value - 5);
+                minIndex = i;
+            }
+        return arrMyData[minIndex];
     }
 }
