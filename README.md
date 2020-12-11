@@ -1,7 +1,6 @@
 # Final Easy Questions
 
-8 easy questions.
+10 easy questions.
 
-8 * 5 = 40 points.
-
+10 * 5 = 50 points.
 
