@@ -60,15 +60,18 @@ public class FinalExamEasy {
         4 * (1/1 - 1/3 + 1/5 - 1/7 + 1/9 - 1/11 + ... -1/19 + 1/21)
         if N = 23, then the program calculates:
         4 * (1/1 - 1/3 + 1/5 - 1/7 + 1/9 - 1/11 + ... +1/21 - 1/23)
+
         Please use a while loop statement.
         Please don't modify the return type (double).
+
+        The N argument will be greater or equal to 3. And will always be an odd number.
         */
         double pi = 1.0;
         // TODO: write your code here.
         return pi;
     }
 
-    public void print2DIntArray(int[][] arr2d){
+    public void print2DIntArrayAndChangeNegativeToZero(int[][] arr2d){
         // YOU DON'T NEED TO MODIFY THIS FUNCTION.
         // This function helps you to debug if you want to
         // print a two-dimensional array of int type.
@@ -78,8 +81,10 @@ public class FinalExamEasy {
         if(n == 0) return;
         for(int i = 0; i < m; i ++){
             for(int j = 0; j < n; j ++){
-                if(arr2d[i][j] == 0)
+                if(arr2d[i][j] == 0) {
                     System.out.print("   ");
+                    arr2d[i][j] = 0; // Change Negative Numbers to 0
+                }
                 else
                     System.out.printf("%3d", arr2d[i][j]);
             }
@@ -101,12 +106,15 @@ public class FinalExamEasy {
          2 1
          1
 
-         Note that 0s are printed as " "(space).
+         Note that numbers that are equal or smaller than 0 are printed as " "(space).
+         So don't worry if you have negative numbers. They will be printed as " ".
+         As, in the returned arr2d, all negative numbers will be converted to 0, automatically,
+         by virtue of calling the function print2DIntArrayAndChangeNegativeToZero().
          You don't need to write the print function. Do things with the arr2d then it's OK.
          */
         // TODO: write your code here.
 
-        print2DIntArray(arr2d); // Don't change this line of code.
+        print2DIntArrayAndChangeNegativeToZero(arr2d); // Don't change this line of code.
         return arr2d; // Don't change this line of code.
     }
 
@@ -123,12 +131,15 @@ public class FinalExamEasy {
          2 1             2 1
          1               1
 
-         Note that 0s are printed as " "(space).
+         Note that numbers that are equal or smaller than 0 are printed as " "(space).
+         So don't worry if you have negative numbers. They will be printed as " ".
+         As, in the returned arr2d, all negative numbers will be converted to 0, automatically,
+         by virtue of calling the function print2DIntArrayAndChangeNegativeToZero().
          You don't need to write the print function. Do things with the arr2d then it's OK.
          */
         // TODO: write your code here.
 
-        print2DIntArray(arr2d); // Don't change this line of code.
+        print2DIntArrayAndChangeNegativeToZero(arr2d); // Don't change this line of code.
         return arr2d; // Don't change this line of code.
     }
 
@@ -136,33 +147,34 @@ public class FinalExamEasy {
         HashMap<String, MyData> hashMap = new HashMap<String, MyData>(); // Don't change this line of code.
         /*
         TODO:
-         Add elements to the hashMap (of type Hashmap<String, MyData>), so that the hashmap will have contents that follow this pattern:
+         Add elements to the hashMap (of type Hashmap<String, MyData>),
+         so that the hashmap will have contents that follow this pattern:
 
-        if N = 2:
+        if N = 2, key-value pairs are (exhaustively):
         "One": (MyData, value = 2)
         "Two": (MyData, value = 4)
-        "Three": (MyData, value = 8)
+        "Three": (MyData, value = 6)
+        "Four": (MyData, value = 8)
+
+        if N = 3, key-value pairs are (exhaustively):
+        "One": (MyData, value = 3)
+        "Two": (MyData, value = 6)
+        "Three": (MyData, value = 9)
+        "Four": (MyData, value = 12)
+
+        if N = 4, key-value pairs are (exhaustively):
+        "One": (MyData, value = 4)
+        "Two": (MyData, value = 8)
+        "Three": (MyData, value = 12)
         "Four": (MyData, value = 16)
 
-        if N = 3:
-        "One": (MyData, value = 3)
-        "Two": (MyData, value = 9)
-        "Three": (MyData, value = 27)
-        "Four": (MyData, value = 81)
-
-        if N = 4:
-        "One": (MyData, value = 4)
-        "Two": (MyData, value = 16)
-        "Three": (MyData, value = 64)
-        "Four": (MyData, value = 256)
-
-        if N = 10:
+        if N = 10, key-value pairs are (exhaustively):
         "One": (MyData, value = 10)
-        "Two": (MyData, value = 100)
-        "Three": (MyData, value = 1000)
-        "Four": (MyData, value = 10000)
+        "Two": (MyData, value = 20)
+        "Three": (MyData, value = 30)
+        "Four": (MyData, value = 40)
 
-        What should be the values of MyData objects when N = 9, or N = 99, or any other integer value?
+        What should be the value of MyData objects when N = 9, or N = 99, or any other integer value?
         It's up to you to find out the pattern, although it's very clear from those several examples.
 
         Note that there are only four entries ("One", "Two", "Three", "Four") in the hashMap.
@@ -180,7 +192,7 @@ public class FinalExamEasy {
          ATTENTION: Please don't modify anything on the MyData class.
          On the contrary, you can add functions to the FinalExamEasy class.
 
-         Note that arrMyData is an parameter, as well as the returned value.
+         Note that arrMyData is passed in as an parameter, and then returned as the return value.
         */
 
         int size = arrMyData.length;

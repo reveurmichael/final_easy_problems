@@ -24,8 +24,8 @@ public class FinalExamEasyCorrectAnswer {
     public String getDayOfTheWeek(int dayNumber){
         /* TODO Question 2
          Write a program called getDayOfTheWeek which returns
-         "Monday", "Tuesday", ... "Sunday" if the int variable
-         "dayNumber" is 1, ..., 7, respectively.
+         "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"
+         if the int variable "dayNumber" is 1, ..., 7, respectively.
          Otherwise, it shall return "FinalExamDay".
          Please use a "switch-case-default" statement.
          Please don't modify the return type (String).
@@ -64,6 +64,8 @@ public class FinalExamEasyCorrectAnswer {
         4 * (1/1 - 1/3 + 1/5 - 1/7 + 1/9 - 1/11 + ... +1/21 - 1/23)
         Please use a while loop statement.
         Please don't modify the return type (double).
+
+        The N argument will be greater or equal to 3. And will always be an odd number.
         */
         double pi = 1.0;
         // TODO: write your code here.
@@ -78,7 +80,7 @@ public class FinalExamEasyCorrectAnswer {
         return pi;
     }
 
-    public void print2DIntArray(int[][] arr2d){
+    public void print2DIntArrayAndChangeNegativeToZero(int[][] arr2d){
         // YOU DON'T NEED TO MODIFY THIS FUNCTION.
         // This function helps you to debug if you want to
         // print a two-dimensional array of int type.
@@ -88,8 +90,10 @@ public class FinalExamEasyCorrectAnswer {
         if(n == 0) return;
         for(int i = 0; i < m; i ++){
             for(int j = 0; j < n; j ++){
-                if(arr2d[i][j] <= 0)
+                if(arr2d[i][j] <= 0) {
                     System.out.print("   ");
+                    arr2d[i][j] = 0;
+                }
                 else
                     System.out.printf("%3d", arr2d[i][j]);
             }
@@ -119,7 +123,7 @@ public class FinalExamEasyCorrectAnswer {
             for(int j = 0; j < size; j ++)
                 arr2d[i][j] = size - i - j;
 
-        print2DIntArray(arr2d); // Don't change this line of code.
+        print2DIntArrayAndChangeNegativeToZero(arr2d); // Don't change this line of code.
         return arr2d; // Don't change this line of code.
     }
 
@@ -148,7 +152,7 @@ public class FinalExamEasyCorrectAnswer {
             for(int j = size; j < 2 * size; j ++)
                 arr2d[i][j] = arr2d[i][j - size];
 
-        print2DIntArray(arr2d); // Don't change this line of code.
+        print2DIntArrayAndChangeNegativeToZero(arr2d); // Don't change this line of code.
         return arr2d; // Don't change this line of code.
     }
 
@@ -159,29 +163,29 @@ public class FinalExamEasyCorrectAnswer {
          Add elements to the hashMap (of type Hashmap<String, MyData>),
          so that the hashmap will have contents that follow this pattern:
 
-        if N = 2, key-value pairs are:
+        if N = 2, key-value pairs are (exhaustively):
         "One": (MyData, value = 2)
         "Two": (MyData, value = 4)
-        "Three": (MyData, value = 8)
+        "Three": (MyData, value = 6)
+        "Four": (MyData, value = 8)
+
+        if N = 3, key-value pairs are (exhaustively):
+        "One": (MyData, value = 3)
+        "Two": (MyData, value = 6)
+        "Three": (MyData, value = 9)
+        "Four": (MyData, value = 12)
+
+        if N = 4, key-value pairs are (exhaustively):
+        "One": (MyData, value = 4)
+        "Two": (MyData, value = 8)
+        "Three": (MyData, value = 12)
         "Four": (MyData, value = 16)
 
-        if N = 3, key-value pairs are:
-        "One": (MyData, value = 3)
-        "Two": (MyData, value = 9)
-        "Three": (MyData, value = 27)
-        "Four": (MyData, value = 81)
-
-        if N = 4, key-value pairs are:
-        "One": (MyData, value = 4)
-        "Two": (MyData, value = 16)
-        "Three": (MyData, value = 64)
-        "Four": (MyData, value = 256)
-
-        if N = 10, key-value pairs are:
+        if N = 10, key-value pairs are (exhaustively):
         "One": (MyData, value = 10)
-        "Two": (MyData, value = 100)
-        "Three": (MyData, value = 1000)
-        "Four": (MyData, value = 10000)
+        "Two": (MyData, value = 20)
+        "Three": (MyData, value = 30)
+        "Four": (MyData, value = 40)
 
         What should be the value of MyData objects when N = 9, or N = 99, or any other integer value?
         It's up to you to find out the pattern, although it's very clear from those several examples.
@@ -205,7 +209,7 @@ public class FinalExamEasyCorrectAnswer {
          ATTENTION: Please don't modify anything on the MyData class.
          On the contrary, you can add functions to the FinalExamEasy class.
 
-         Note that arrMyData is an parameter, as well as the returned value.
+         Note that arrMyData is passed in as an parameter, and then returned as the return value.
         */
         // TODO: write your code here.
         int size = arrMyData.length;
