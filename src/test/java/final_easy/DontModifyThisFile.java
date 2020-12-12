@@ -19,7 +19,7 @@ public class DontModifyThisFile {
   private final ByteArrayOutputStream outContent = new ByteArrayOutputStream();
   private final PrintStream originalOut = System.out;
 
-  public FinalExamEasyCorrectAnswer f = new FinalExamEasyCorrectAnswer();
+  public FinalExamEasy f = new FinalExamEasy();
   public int[] ss = new int[]{1345066,
           5476193, 12814717,
           51607799, 97428615,
