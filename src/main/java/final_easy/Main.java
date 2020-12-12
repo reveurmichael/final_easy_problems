@@ -5,8 +5,7 @@ import java.util.HashMap;
 public class Main {
 
     public static void main(String[] args) {
-        FinalExamEasyCorrectAnswer easy = new FinalExamEasyCorrectAnswer();
-//        FinalExamEasy easy = new FinalExamEasy();
+        FinalExamEasy easy = new FinalExamEasy();
 
         System.out.println("\nQuestion 1");
         System.out.println(easy.checkIfANumberIsEven(10));
@@ -21,10 +20,14 @@ public class Main {
         System.out.println(easy.getDayOfTheWeek(9));
 
         System.out.println("\nQuestion 3");
-        System.out.println(easy.computePIWithSeriesExpansion(1));
         System.out.println(easy.computePIWithSeriesExpansion(3));
         System.out.println(easy.computePIWithSeriesExpansion(5));
         System.out.println(easy.computePIWithSeriesExpansion(21));
+        System.out.println(easy.computePIWithSeriesExpansion(41));
+        System.out.println(easy.computePIWithSeriesExpansion(81));
+        System.out.println(easy.computePIWithSeriesExpansion(191));
+        System.out.println(easy.computePIWithSeriesExpansion(691));
+        System.out.println(easy.computePIWithSeriesExpansion(8691));
 
         System.out.println("\nQuestion 4");
         easy.Question4(4);
@@ -87,5 +90,103 @@ public class Main {
         arrMyDataQ10[2] = new MyData(10);
         arrMyDataQ10[3] = new MyData(7);
         System.out.println(easy.Question10(arrMyDataQ10));
+
+        /*
+        If your answers are correct, you should expect this output:
+
+        Question 1
+        false
+        true
+        true
+
+        Question 2
+        Monday
+        Wednesday
+        Friday
+        Sunday
+        FinalExamDay
+
+        Question 3
+        2.666666666666667
+        3.466666666666667
+        3.232315809405594
+        3.189184782277596
+        3.1659792728432157
+        3.131176269454982
+        3.138702486214805
+        3.141362556952252
+
+        Question 4
+          4  3  2  1
+          3  2  1
+          2  1
+          1
+          7  6  5  4  3  2  1
+          6  5  4  3  2  1
+          5  4  3  2  1
+          4  3  2  1
+          3  2  1
+          2  1
+          1
+          8  7  6  5  4  3  2  1
+          7  6  5  4  3  2  1
+          6  5  4  3  2  1
+          5  4  3  2  1
+          4  3  2  1
+          3  2  1
+          2  1
+          1
+
+        Question 5
+          4  3  2  1  4  3  2  1
+          3  2  1     3  2  1
+          2  1        2  1
+          1           1
+          7  6  5  4  3  2  1  7  6  5  4  3  2  1
+          6  5  4  3  2  1     6  5  4  3  2  1
+          5  4  3  2  1        5  4  3  2  1
+          4  3  2  1           4  3  2  1
+          3  2  1              3  2  1
+          2  1                 2  1
+          1                    1
+          8  7  6  5  4  3  2  1  8  7  6  5  4  3  2  1
+          7  6  5  4  3  2  1     7  6  5  4  3  2  1
+          6  5  4  3  2  1        6  5  4  3  2  1
+          5  4  3  2  1           5  4  3  2  1
+          4  3  2  1              4  3  2  1
+          3  2  1                 3  2  1
+          2  1                    2  1
+          1                       1
+
+        Question 6
+        (MyData, value = 3)
+        (MyData, value = 6)
+        (MyData, value = 9)
+        (MyData, value = 12)
+        (MyData, value = 10)
+        (MyData, value = 20)
+        (MyData, value = 30)
+        (MyData, value = 40)
+
+        Question 7
+        (MyData, value = 1)
+        (MyData, value = 5)
+        (MyData, value = 7)
+        (MyData, value = 10)
+        (MyData, value = 1)
+        (MyData, value = 5)
+        (MyData, value = 7)
+        (MyData, value = 10)
+
+        Question 8
+        (MyData, value = 16)
+
+        Question 9
+        (MyData, value = 9)
+
+        Question 10
+        (MyData, value = 7)
+
+         */
     }
 }

@@ -81,7 +81,7 @@ public class FinalExamEasy {
         if(n == 0) return;
         for(int i = 0; i < m; i ++){
             for(int j = 0; j < n; j ++){
-                if(arr2d[i][j] == 0) {
+                if(arr2d[i][j] <= 0) {
                     System.out.print("   ");
                     arr2d[i][j] = 0; // Change Negative Numbers to 0
                 }
@@ -193,6 +193,8 @@ public class FinalExamEasy {
          On the contrary, you can add functions to the FinalExamEasy class.
 
          Note that arrMyData is passed in as an parameter, and then returned as the return value.
+
+         When tested, the length of arrMyData will be at least 2. So don't bother to check that.
         */
 
         int size = arrMyData.length;
@@ -206,6 +208,9 @@ public class FinalExamEasy {
         TODO:
          Find the maximum number of an array of MyData (arrMyData).
          Note that returned type is MyData.
+
+         When tested, the length of arrMyData will be at least 2. So don't bother to check that.
+
         */
         // TODO: write your code here.
 
@@ -217,6 +222,9 @@ public class FinalExamEasy {
         TODO:
          Find the 2nd maximum number of an array of MyData (arrMyData)
          Note that returned type is MyData.
+
+         When tested, the length of arrMyData will be at least 2. So don't bother to check that.
+
         */
         // TODO: write your code here.
 
@@ -226,6 +234,8 @@ public class FinalExamEasy {
     public MyData Question10(MyData[] arrMyData){
         /*
         Find the MyData object in an array of MyData (arrMyData) whose value is the most in proximity to 5.
+
+        When tested, the length of arrMyData will be at least 2. So don't bother to check that.
         */
         // TODO: write your code here.
 
