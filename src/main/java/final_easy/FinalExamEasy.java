@@ -2,7 +2,8 @@ package final_easy;
 
 import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.Scanner;
+import java.math.*;
+
 
 
 class MyData {
@@ -39,12 +40,12 @@ public class FinalExamEasy {
     public String getDayOfTheWeek(int dayNumber){
         /* TODO Question 2
          Write a program called getDayOfTheWeek which returns
-         "Monday", "Tuesday", ... "Sunday" if the int variable
+         "Monday", "Tuesday", "Wednesday", "Thursday",
+         "Friday", "Saturday", "Sunday" if the int variable
          "dayNumber" is 1, ..., 7, respectively.
          Otherwise, it shall return "FinalExamDay".
          Please use a "switch-case-default" statement.
          Please don't modify the return type (String).
-         Please use println instead of print.
          */
         // TODO: write your code here.
         return "FinalExamDay"; // TODO return something else
@@ -73,8 +74,9 @@ public class FinalExamEasy {
 
     public void print2DIntArrayAndChangeNegativeToZero(int[][] arr2d){
         // YOU DON'T NEED TO MODIFY THIS FUNCTION.
-        // This function helps you to debug if you want to
+        // This function helps you to
         // print a two-dimensional array of int type.
+        // 0s and negative numbers are printed as " ".
         int m = arr2d.length;
         if(m == 0) return;
         int n = arr2d[0].length;
@@ -82,7 +84,7 @@ public class FinalExamEasy {
         for(int i = 0; i < m; i ++){
             for(int j = 0; j < n; j ++){
                 if(arr2d[i][j] <= 0) {
-                    System.out.print("   ");
+                    System.out.print("   "); // 0s and negative numbers are printed as " ".
                     arr2d[i][j] = 0; // Change Negative Numbers to 0
                 }
                 else
@@ -194,7 +196,7 @@ public class FinalExamEasy {
 
          Note that arrMyData is passed in as an parameter, and then returned as the return value.
 
-         When tested, the length of arrMyData will be at least 2. So don't bother to check that.
+         When tested, the length of input arrMyData will be at least 2. So don't bother to check that.
         */
 
         int size = arrMyData.length;
@@ -209,7 +211,7 @@ public class FinalExamEasy {
          Find the maximum number of an array of MyData (arrMyData).
          Note that returned type is MyData.
 
-         When tested, the length of arrMyData will be at least 2. So don't bother to check that.
+         When tested, the length of input arrMyData will be at least 2. So don't bother to check that.
 
         */
         // TODO: write your code here.
@@ -223,7 +225,7 @@ public class FinalExamEasy {
          Find the 2nd maximum number of an array of MyData (arrMyData)
          Note that returned type is MyData.
 
-         When tested, the length of arrMyData will be at least 2. So don't bother to check that.
+         When tested, the length of input arrMyData will be at least 2. So don't bother to check that.
 
         */
         // TODO: write your code here.
@@ -235,7 +237,7 @@ public class FinalExamEasy {
         /*
         Find the MyData object in an array of MyData (arrMyData) whose value is the most in proximity to 5.
 
-        When tested, the length of arrMyData will be at least 2. So don't bother to check that.
+        When tested, the length of input arrMyData will be at least 2. So don't bother to check that.
         */
         // TODO: write your code here.
 
